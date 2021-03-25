@@ -8,7 +8,7 @@ You need to send me your public key in order to connect to the virtual machine (
 <br>**Connecting to the machine** open your shell and run `ssh 35.184.29.91`
 <br>**Running the app** `bash ~/run-app.sh`
 
-**You will need to connect to the machine from other shell in order to run commands** `ssh 35.184.29.91`
+**You will need to connect to the machine from other shell in order to run other commands** `ssh 35.184.29.91`
 
 **Example for running api calls** `python3 ~/myproject/myproject/example/api_calls_example.py`
 
