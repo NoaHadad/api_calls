@@ -11,7 +11,7 @@ class ApiTestCase(unittest.TestCase):
     file.close()
 
     expected={"errorCode": 2,"description": "input is not valid", "level": "error"}  
-    result = requests.post('http://35.184.29.91/api/quote-create',headers = {'Authorization':'Token 7250270b0d6d401c05d1375c43845729f17af91f'},json=data).json()
+    result = requests.post('http://35.184.29.91/api/quote-create',headers = {'Authorization':'Token 474131a59a189e801c7441b9c29f5ff590a3174d'},json=data).json()
 
     print("test empty name") 
     print("quote   : ",data)
@@ -27,7 +27,7 @@ class ApiTestCase(unittest.TestCase):
     file.close()
 
     expected={"errorCode": 2,"description": "input is not valid", "level": "error"}
-    result = requests.post('http://35.184.29.91/api/quote-create',headers = {'Authorization':'Token 7250270b0d6d401c05d1375c43845729f17af91f'},json=data).json()
+    result = requests.post('http://35.184.29.91/api/quote-create',headers = {'Authorization':'Token 474131a59a189e801c7441b9c29f5ff590a3174d'},json=data).json()
 
     print()
     print("test negative price")
