@@ -12,7 +12,7 @@ You need to send me your public key in order to connect to the virtual machine (
 
 **Example for running api calls** `python3 ~/myproject/myproject/example/api_calls_example.py`
 
-**Token** 7250270b0d6d401c05d1375c43845729f17af91f
+**Token** 474131a59a189e801c7441b9c29f5ff590a3174d
 
 **Access to DB** 
 <br>**From browser** Go to admin page http://35.184.29.91/admin with user 'noa' password '1234'
