@@ -12,7 +12,7 @@ You need to send me your public key in order to connect to the virtual machine (
 
 **API overview** http://35.184.29.91/api
 
-**Example for getting existing token and running api calls** `python3 ~/myproject/myproject/example/api_calls_example.py`
+**Example for getting existing token and running api calls** <br>`python3 ~/myproject/myproject/example/api_calls_example.py`
 
 **Token to use** 474131a59a189e801c7441b9c29f5ff590a3174d
 
