@@ -32,7 +32,7 @@ def write_log(new_log):
 #the function gets index of error, writes the error to log_file and returns the error
 def err(index):
 
-    error=json.loads('{"errorCode": index,"description": errors[index], "level": "error"}')
+    error={"errorCode": index,"description": errors[index], "level": "error"}
     write_log(error)
     return error
 
