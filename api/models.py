@@ -7,6 +7,8 @@ from django.utils import timezone
 from django.contrib.postgres.fields import ArrayField
 from django.contrib.postgres.fields import HStoreField
 
+from django_enumfield import enum
+
 # Create your models here.
 
 
@@ -30,12 +32,13 @@ class QuoteLog(models.Model):
       error_code=ArrayField(models.IntegerField(),default=list)
       message=ArrayField(models.CharField(max_length=200))
 
-      class Operation(models.IntegerChoices):
-        CREATE = 1
-        UPDATE = 2
-        DELETE = 3
+      class Operation(enum.Enum):
+        CREATE = 0   
+        UPDATE = 1
+        DELETE = 2 
 
-      operation = models.IntegerField(choices=Operation.choices)
+      operation=enum.EnumField(Operation)
+
 
       def __str__(self):
-          return "quote_id: "+str(self.quote_id)+", messege: "+str(self.message)+", error code: "+str(self.error_code)+", operation "+str(self.Operation.choices[self.operation])
+          return "quote_id: "+str(self.quote_id)+", messege: "+str(self.message)+", error code: "+str(self.error_code)+", operation: "+str(self.operation)
