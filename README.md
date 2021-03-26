@@ -20,7 +20,7 @@ You need to send me your public key in order to connect to the virtual machine (
 <br>**From browser** Go to admin page http://35.184.29.91/admin with user 'noa' password '1234'
 <br>**From the machine** run the commands: `sudo su - postgres`, `psql` and `\c myproject` (log out- run `\q` and `exit`).
 
-**Error logs** `nano ~/myproject/myproject/err_logs.txt`
+**Error logs** `cat ~/myproject/myproject/err_logs.txt`
 
 **Running the tests** `python3 ~/myproject/myproject/api/tests.py`
 
