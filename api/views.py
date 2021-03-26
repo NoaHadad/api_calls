@@ -69,7 +69,7 @@ def quoteDetail(request,pk):
     try:
        quote=Quote.objects.get(Q(name=pk) & Q(deleted=0))
     except:
-       return Response("Quote doesn't exist")
+       return Response(err(3))
 
     serializer=QuoteSerializer(quote)
     return Response(serializer.data)
