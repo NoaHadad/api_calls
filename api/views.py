@@ -10,8 +10,6 @@ from .models import Quote,QuoteLog
 
 from django.db.models import Q
 
-import json
-
 from threading import Lock
 log_lock=Lock()
 
