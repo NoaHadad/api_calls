@@ -17,7 +17,7 @@ You need to send me your public key in order to connect to the virtual machine (
 **Token to use** 474131a59a189e801c7441b9c29f5ff590a3174d
 
 **Access to DB** 
-<br>**From browser** Go to admin page http://35.184.29.91/admin with user 'noa' password '1234'
+<br>**From the browser** Go to admin page http://35.184.29.91/admin with user 'noa' password '1234'
 <br>**From the machine** run the commands: `sudo su - postgres`, `psql` and `\c myproject` (log out- run `\q` and `exit`).
 
 **Error logs** `cat ~/myproject/myproject/err_logs.txt`
