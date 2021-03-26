@@ -10,6 +10,8 @@ from .models import Quote,QuoteLog
 
 from django.db.models import Q
 
+import json
+
 from threading import Lock
 log_lock=Lock()
 
@@ -30,7 +32,7 @@ def write_log(new_log):
 #the function gets index of error, writes the error to log_file and returns the error
 def err(index):
 
-    error={"errorCode": index,"description": errors[index], "level": "error"}
+    error=json.loads('{"errorCode": index,"description": errors[index], "level": "error"}')
     write_log(error)
     return error
 
